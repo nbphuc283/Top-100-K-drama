@@ -3,7 +3,7 @@
 
 📽️ Just finished "The Glory" a few days ago and I must say the story was thrilling! This made me wonder, how could the South Koreans constantly make great movies like that? Using the data of **Top 100 K-Dramas of all time** from [MyDramaList](https://mydramalist.com/shows/top_korean_dramas?page=1), let's find out the secret formula to make a great K-Drama!
 
-💡 In order to do this, I am to try and answer these questions:
+💡 In order to do this, I am to try and answer these questions using PostgreSQL:
 1. Which actors/actresses appeared the most in these movies?
 2. Which are the most popular genres among these movies?
 3. Which are the most common tags among these movies?
