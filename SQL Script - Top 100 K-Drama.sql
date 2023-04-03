@@ -1,4 +1,4 @@
-/* Count the number of appearance of each actors */
+/* Count the number of appearances of each actor */
 WITH actor_split AS(
 SELECT
 	SPLIT_PART("Main Role"::TEXT, ', ', generate_series(1,10)) AS names
@@ -109,7 +109,7 @@ Hardworking Male Lead  |    9|
 Trauma                 |    9|
 */
 
-/* Number of watchers by year & days of week */
+/* Number of watchers by years & days of week */
 SELECT 
 	CASE WHEN start_date = '10-Jun-17' THEN DATE_PART('Year', TO_DATE(start_date, 'DD-Mon-YY'))
 		ELSE DATE_PART('Year', TO_DATE(start_date, 'MM/DD/YYYY'))
@@ -167,7 +167,7 @@ year  |day_aired               |total_watchers|average_score|
 2003.0|Monday, Tuesday         |         16545|         8.60|
 */
 
-/* Number of watchers by year & number of episodes */
+/* Number of watchers by years & number of episodes */
 SELECT 
 	CASE WHEN start_date = '10-Jun-17' THEN DATE_PART('Year', TO_DATE(start_date, 'DD-Mon-YY'))
 		ELSE DATE_PART('Year', TO_DATE(start_date, 'MM/DD/YYYY'))
@@ -232,7 +232,7 @@ year  |episodes|total_watchers|average_score|
 2003.0|      54|         16545|         8.60|
 */
 
-/* Number of watchers by year & duration per episode in minutes */
+/* Number of watchers by years & duration per episode in minutes */
 SELECT 
 	CASE WHEN start_date = '10-Jun-17' THEN DATE_PART('Year', TO_DATE(start_date, 'DD-Mon-YY'))
 		ELSE DATE_PART('Year', TO_DATE(start_date, 'MM/DD/YYYY'))
